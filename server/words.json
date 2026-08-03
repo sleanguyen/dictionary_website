@@ -1,0 +1,472 @@
+[
+  {
+    "keyword": "time",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "thời gian" },
+      { "lang": "fr", "text": "temps" }
+    ],
+    "examples": ["I don't have enough time to finish this project today."]
+  },
+  {
+    "keyword": "work",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "làm việc" },
+      { "lang": "fr", "text": "travailler" }
+    ],
+    "examples": ["They work in a large corporate office downtown."]
+  },
+  {
+    "keyword": "new",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "mới" },
+      { "lang": "fr", "text": "nouveau" }
+    ],
+    "examples": ["She bought a new car last weekend."]
+  },
+  {
+    "keyword": "people",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "mọi người" },
+      { "lang": "fr", "text": "gens" }
+    ],
+    "examples": ["There were many people waiting in line for the concert."]
+  },
+  {
+    "keyword": "think",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "suy nghĩ" },
+      { "lang": "fr", "text": "penser" }
+    ],
+    "examples": ["I think it is going to rain tomorrow."]
+  },
+  {
+    "keyword": "good",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "tốt" },
+      { "lang": "fr", "text": "bon" }
+    ],
+    "examples": ["Drinking plenty of water is good for your health."]
+  },
+  {
+    "keyword": "day",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "ngày" },
+      { "lang": "fr", "text": "jour" }
+    ],
+    "examples": ["We spent the whole day walking around the city."]
+  },
+  {
+    "keyword": "know",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "biết" },
+      { "lang": "fr", "text": "savoir" }
+    ],
+    "examples": ["Do you know the answer to this math problem?"]
+  },
+  {
+    "keyword": "old",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "cũ" },
+      { "lang": "fr", "text": "vieux" }
+    ],
+    "examples": ["He found an old photograph in the attic."]
+  },
+  {
+    "keyword": "world",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "thế giới" },
+      { "lang": "fr", "text": "monde" }
+    ],
+    "examples": ["They want to travel around the world after graduation."]
+  },
+  {
+    "keyword": "see",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "nhìn thấy" },
+      { "lang": "fr", "text": "voir" }
+    ],
+    "examples": ["I can see the mountains clearly from my window."]
+  },
+  {
+    "keyword": "great",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "tuyệt vời" },
+      { "lang": "fr", "text": "génial" }
+    ],
+    "examples": ["We had a great time at the party last night."]
+  },
+  {
+    "keyword": "child",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "đứa trẻ" },
+      { "lang": "fr", "text": "enfant" }
+    ],
+    "examples": ["The child was playing happily in the garden."]
+  },
+  {
+    "keyword": "come",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "đến" },
+      { "lang": "fr", "text": "venir" }
+    ],
+    "examples": ["Please come to my house for dinner on Friday."]
+  },
+  {
+    "keyword": "small",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "nhỏ" },
+      { "lang": "fr", "text": "petit" }
+    ],
+    "examples": ["She lives in a small apartment in the city center."]
+  },
+  {
+    "keyword": "problem",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "vấn đề" },
+      { "lang": "fr", "text": "problème" }
+    ],
+    "examples": ["We need to find a solution to this problem quickly."]
+  },
+  {
+    "keyword": "find",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "tìm thấy" },
+      { "lang": "fr", "text": "trouver" }
+    ],
+    "examples": ["I hope you find your lost keys soon."]
+  },
+  {
+    "keyword": "high",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "cao" },
+      { "lang": "fr", "text": "haut" }
+    ],
+    "examples": ["The bird flew high up into the clouds."]
+  },
+  {
+    "keyword": "family",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "gia đình" },
+      { "lang": "fr", "text": "famille" }
+    ],
+    "examples": ["His family usually goes on vacation together in the summer."]
+  },
+  {
+    "keyword": "give",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "cho" },
+      { "lang": "fr", "text": "donner" }
+    ],
+    "examples": ["She decided to give her old clothes to charity."]
+  },
+  {
+    "keyword": "important",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "quan trọng" },
+      { "lang": "fr", "text": "important" }
+    ],
+    "examples": ["It is important to read the instructions carefully."]
+  },
+  {
+    "keyword": "student",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "học sinh" },
+      { "lang": "fr", "text": "étudiant" }
+    ],
+    "examples": ["The student asked the professor a very difficult question."]
+  },
+  {
+    "keyword": "tell",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "kể" },
+      { "lang": "fr", "text": "dire" }
+    ],
+    "examples": ["Can you tell me the story again?"]
+  },
+  {
+    "keyword": "large",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "lớn" },
+      { "lang": "fr", "text": "grand" }
+    ],
+    "examples": ["They ordered a large pizza for the party."]
+  },
+  {
+    "keyword": "group",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "nhóm" },
+      { "lang": "fr", "text": "groupe" }
+    ],
+    "examples": ["A group of tourists was standing outside the museum."]
+  },
+  {
+    "keyword": "ask",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "hỏi" },
+      { "lang": "fr", "text": "demander" }
+    ],
+    "examples": ["Don't be afraid to ask for help if you need it."]
+  },
+  {
+    "keyword": "different",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "khác nhau" },
+      { "lang": "fr", "text": "différent" }
+    ],
+    "examples": ["The two sisters have very different personalities."]
+  },
+  {
+    "keyword": "country",
+    "sourceLanguage": "en",
+    "partOfSpeech": "noun",
+    "translations": [
+      { "lang": "vi", "text": "đất nước" },
+      { "lang": "fr", "text": "pays" }
+    ],
+    "examples": ["Japan is a beautiful country with a rich culture."]
+  },
+  {
+    "keyword": "try",
+    "sourceLanguage": "en",
+    "partOfSpeech": "verb",
+    "translations": [
+      { "lang": "vi", "text": "thử" },
+      { "lang": "fr", "text": "essayer" }
+    ],
+    "examples": ["You should try this new restaurant, the food is amazing."]
+  },
+  {
+    "keyword": "early",
+    "sourceLanguage": "en",
+    "partOfSpeech": "adjective",
+    "translations": [
+      { "lang": "vi", "text": "sớm" },
+      { "lang": "fr", "text": "tôt" }
+    ],
+    "examples": ["He always wakes up early to watch the sunrise."]
+  },
+  {"keyword":"place","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"nơi"},{"lang":"fr","text":"lieu"}],"examples":["This is a quiet place to study."]},
+  {"keyword":"case","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"trường hợp"},{"lang":"fr","text":"cas"}],"examples":["In that case, we should leave early."]},
+  {"keyword":"week","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"tuần"},{"lang":"fr","text":"semaine"}],"examples":["I will finish the report next week."]},
+  {"keyword":"company","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"công ty"},{"lang":"fr","text":"entreprise"}],"examples":["She works for a technology company."]},
+  {"keyword":"system","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"hệ thống"},{"lang":"fr","text":"système"}],"examples":["The new system improved our workflow."]},
+  {"keyword":"program","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"chương trình"},{"lang":"fr","text":"programme"}],"examples":["He enrolled in a training program."]},
+  {"keyword":"question","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"câu hỏi"},{"lang":"fr","text":"question"}],"examples":["She raised her hand to ask a question."]},
+  {"keyword":"government","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"chính phủ"},{"lang":"fr","text":"gouvernement"}],"examples":["The government announced new policies today."]},
+  {"keyword":"number","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"số"},{"lang":"fr","text":"nombre"}],"examples":["Please write your phone number here."]},
+  {"keyword":"night","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"đêm"},{"lang":"fr","text":"nuit"}],"examples":["We watched the stars all night."]},
+  {"keyword":"point","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"điểm"},{"lang":"fr","text":"point"}],"examples":["He made a good point during the meeting."]},
+  {"keyword":"home","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"nhà"},{"lang":"fr","text":"maison"}],"examples":["I usually cook dinner at home."]},
+  {"keyword":"water","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"nước"},{"lang":"fr","text":"eau"}],"examples":["Drink more water during hot weather."]},
+  {"keyword":"room","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"phòng"},{"lang":"fr","text":"pièce"}],"examples":["The room was full of guests."]},
+  {"keyword":"mother","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"mẹ"},{"lang":"fr","text":"mère"}],"examples":["My mother taught me how to cook."]},
+  {"keyword":"area","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"khu vực"},{"lang":"fr","text":"zone"}],"examples":["This area is known for its restaurants."]},
+  {"keyword":"money","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"tiền"},{"lang":"fr","text":"argent"}],"examples":["They saved money to buy a house."]},
+  {"keyword":"story","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"câu chuyện"},{"lang":"fr","text":"histoire"}],"examples":["She told an interesting story about her trip."]},
+  {"keyword":"fact","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"sự thật"},{"lang":"fr","text":"fait"}],"examples":["It is a fact that exercise improves health."]},
+  {"keyword":"month","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"tháng"},{"lang":"fr","text":"mois"}],"examples":["We are moving next month."]},
+  {"keyword":"right","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"đúng"},{"lang":"fr","text":"correct"}],"examples":["That is the right answer."]},
+  {"keyword":"study","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"học"},{"lang":"fr","text":"étudier"}],"examples":["He needs to study for his exam tonight."]},
+  {"keyword":"book","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"sách"},{"lang":"fr","text":"livre"}],"examples":["I am reading a fascinating book."]},
+  {"keyword":"eye","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"mắt"},{"lang":"fr","text":"œil"}],"examples":["She has bright blue eyes."]},
+  {"keyword":"job","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"công việc"},{"lang":"fr","text":"emploi"}],"examples":["He found a new job last month."]},
+  {"keyword":"word","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"từ"},{"lang":"fr","text":"mot"}],"examples":["I don't understand this word."]},
+  {"keyword":"business","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"kinh doanh"},{"lang":"fr","text":"affaires"}],"examples":["She started her own business last year."]},
+  {"keyword":"issue","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"vấn đề"},{"lang":"fr","text":"enjeu"}],"examples":["We discussed the issue at the meeting."]},
+  {"keyword":"side","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bên"},{"lang":"fr","text":"côté"}],"examples":["The park is on the other side of the street."]},
+  {"keyword":"kind","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"tốt bụng"},{"lang":"fr","text":"gentil"}],"examples":["She is very kind to everyone she meets."]},
+  {"keyword":"head","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"đầu"},{"lang":"fr","text":"tête"}],"examples":["He hit his head on the door."]},
+  {"keyword":"house","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"ngôi nhà"},{"lang":"fr","text":"maison"}],"examples":["They bought a house near the beach."]},
+  {"keyword":"service","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"dịch vụ"},{"lang":"fr","text":"service"}],"examples":["The hotel offers excellent service."]},
+  {"keyword":"friend","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bạn"},{"lang":"fr","text":"ami"}],"examples":["My best friend lives next door."]},
+  {"keyword":"father","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cha"},{"lang":"fr","text":"père"}],"examples":["My father works as an engineer."]},
+  {"keyword":"power","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"quyền lực"},{"lang":"fr","text":"pouvoir"}],"examples":["The storm knocked out the power."]},
+  {"keyword":"hour","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"giờ"},{"lang":"fr","text":"heure"}],"examples":["The meeting lasted about an hour."]},
+  {"keyword":"game","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"trò chơi"},{"lang":"fr","text":"jeu"}],"examples":["The children played a game outside."]},
+  {"keyword":"line","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"đường kẻ"},{"lang":"fr","text":"ligne"}],"examples":["Draw a straight line across the page."]},
+  {"keyword":"end","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"kết thúc"},{"lang":"fr","text":"fin"}],"examples":["We watched the movie until the end."]},
+  {"keyword":"member","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"thành viên"},{"lang":"fr","text":"membre"}],"examples":["She is a member of the local club."]},
+  {"keyword":"law","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"luật"},{"lang":"fr","text":"loi"}],"examples":["The new law takes effect next year."]},
+  {"keyword":"car","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"xe hơi"},{"lang":"fr","text":"voiture"}],"examples":["He parked his car outside the store."]},
+  {"keyword":"city","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"thành phố"},{"lang":"fr","text":"ville"}],"examples":["Paris is a beautiful city."]},
+  {"keyword":"name","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"tên"},{"lang":"fr","text":"nom"}],"examples":["What is your name?"]},
+  {"keyword":"team","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"đội"},{"lang":"fr","text":"équipe"}],"examples":["Our team won the championship."]},
+  {"keyword":"minute","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"phút"},{"lang":"fr","text":"minute"}],"examples":["Wait a minute, I'll be right back."]},
+  {"keyword":"idea","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"ý tưởng"},{"lang":"fr","text":"idée"}],"examples":["That's a great idea for the project."]},
+  {"keyword":"body","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cơ thể"},{"lang":"fr","text":"corps"}],"examples":["Regular exercise keeps your body healthy."]},
+  {"keyword":"information","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"thông tin"},{"lang":"fr","text":"information"}],"examples":["The website provides useful information."]},
+  {"keyword":"back","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"lưng"},{"lang":"fr","text":"dos"}],"examples":["He hurt his back while lifting boxes."]},
+  {"keyword":"parent","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cha mẹ"},{"lang":"fr","text":"parent"}],"examples":["Every parent wants their child to succeed."]},
+  {"keyword":"face","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"khuôn mặt"},{"lang":"fr","text":"visage"}],"examples":["She had a smile on her face."]},
+  {"keyword":"level","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cấp độ"},{"lang":"fr","text":"niveau"}],"examples":["The water reached a dangerous level."]},
+  {"keyword":"office","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"văn phòng"},{"lang":"fr","text":"bureau"}],"examples":["He arrives at the office at nine."]},
+  {"keyword":"door","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cửa"},{"lang":"fr","text":"porte"}],"examples":["Please close the door behind you."]},
+  {"keyword":"health","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"sức khỏe"},{"lang":"fr","text":"santé"}],"examples":["Good sleep is important for your health."]},
+  {"keyword":"person","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"người"},{"lang":"fr","text":"personne"}],"examples":["She is a very kind person."]},
+  {"keyword":"art","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"nghệ thuật"},{"lang":"fr","text":"art"}],"examples":["The museum displays modern art."]},
+  {"keyword":"war","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"chiến tranh"},{"lang":"fr","text":"guerre"}],"examples":["The country suffered greatly during the war."]},
+  {"keyword":"history","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"lịch sử"},{"lang":"fr","text":"histoire"}],"examples":["She studies ancient history at university."]},
+  {"keyword":"party","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bữa tiệc"},{"lang":"fr","text":"fête"}],"examples":["We are hosting a birthday party."]},
+  {"keyword":"result","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"kết quả"},{"lang":"fr","text":"résultat"}],"examples":["The test result came back positive."]},
+  {"keyword":"change","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"thay đổi"},{"lang":"fr","text":"changer"}],"examples":["We need to change our approach."]},
+  {"keyword":"morning","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"buổi sáng"},{"lang":"fr","text":"matin"}],"examples":["I drink coffee every morning."]},
+  {"keyword":"reason","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"lý do"},{"lang":"fr","text":"raison"}],"examples":["She had a good reason for being late."]},
+  {"keyword":"research","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"nghiên cứu"},{"lang":"fr","text":"recherche"}],"examples":["The team published their research findings."]},
+  {"keyword":"girl","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cô gái"},{"lang":"fr","text":"fille"}],"examples":["The girl smiled at her friends."]},
+  {"keyword":"moment","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"khoảnh khắc"},{"lang":"fr","text":"moment"}],"examples":["It was a proud moment for the whole family."]},
+  {"keyword":"air","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"không khí"},{"lang":"fr","text":"air"}],"examples":["The mountain air felt fresh and cool."]},
+  {"keyword":"teacher","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"giáo viên"},{"lang":"fr","text":"enseignant"}],"examples":["My teacher explained the lesson clearly."]},
+  {"keyword":"education","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"giáo dục"},{"lang":"fr","text":"éducation"}],"examples":["Education opens many doors in life."]},
+  {"keyword":"foot","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bàn chân"},{"lang":"fr","text":"pied"}],"examples":["He stubbed his foot on the table."]},
+  {"keyword":"boy","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cậu bé"},{"lang":"fr","text":"garçon"}],"examples":["The boy ran across the playground."]},
+  {"keyword":"age","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"tuổi"},{"lang":"fr","text":"âge"}],"examples":["She looks young for her age."]},
+  {"keyword":"plan","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"kế hoạch"},{"lang":"fr","text":"plan"}],"examples":["We made a plan for the weekend."]},
+  {"keyword":"college","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"trường cao đẳng"},{"lang":"fr","text":"université"}],"examples":["She is applying to college this year."]},
+  {"keyword":"interest","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"sự quan tâm"},{"lang":"fr","text":"intérêt"}],"examples":["He showed great interest in the topic."]},
+  {"keyword":"death","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cái chết"},{"lang":"fr","text":"mort"}],"examples":["His death was a great loss to the community."]},
+  {"keyword":"experience","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"kinh nghiệm"},{"lang":"fr","text":"expérience"}],"examples":["She has years of experience in teaching."]},
+  {"keyword":"class","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"lớp học"},{"lang":"fr","text":"classe"}],"examples":["Our class starts at eight in the morning."]},
+  {"keyword":"control","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"kiểm soát"},{"lang":"fr","text":"contrôler"}],"examples":["It is hard to control the weather."]},
+  {"keyword":"care","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"quan tâm"},{"lang":"fr","text":"se soucier"}],"examples":["She really cares about her friends."]},
+  {"keyword":"field","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cánh đồng"},{"lang":"fr","text":"champ"}],"examples":["The cows grazed in the field."]},
+  {"keyword":"development","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"sự phát triển"},{"lang":"fr","text":"développement"}],"examples":["The city invested in economic development."]},
+  {"keyword":"role","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"vai trò"},{"lang":"fr","text":"rôle"}],"examples":["She played an important role in the project."]},
+  {"keyword":"effort","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"nỗ lực"},{"lang":"fr","text":"effort"}],"examples":["He put a lot of effort into his work."]},
+  {"keyword":"rate","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"tỷ lệ"},{"lang":"fr","text":"taux"}],"examples":["The interest rate increased this month."]},
+  {"keyword":"heart","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"trái tim"},{"lang":"fr","text":"cœur"}],"examples":["Her heart was full of joy."]},
+  {"keyword":"show","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"cho xem"},{"lang":"fr","text":"montrer"}],"examples":["Can you show me how this works?"]},
+  {"keyword":"light","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"ánh sáng"},{"lang":"fr","text":"lumière"}],"examples":["Turn on the light, it's getting dark."]},
+  {"keyword":"voice","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"giọng nói"},{"lang":"fr","text":"voix"}],"examples":["I recognized her voice immediately."]},
+  {"keyword":"mind","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"tâm trí"},{"lang":"fr","text":"esprit"}],"examples":["Keep an open mind about new ideas."]},
+  {"keyword":"price","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"giá cả"},{"lang":"fr","text":"prix"}],"examples":["The price of gas went up again."]},
+  {"keyword":"decision","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"quyết định"},{"lang":"fr","text":"décision"}],"examples":["It was a difficult decision to make."]},
+  {"keyword":"hospital","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bệnh viện"},{"lang":"fr","text":"hôpital"}],"examples":["She works as a nurse at the hospital."]},
+  {"keyword":"church","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"nhà thờ"},{"lang":"fr","text":"église"}],"examples":["They go to church every Sunday."]},
+  {"keyword":"step","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bước"},{"lang":"fr","text":"étape"}],"examples":["Follow each step carefully."]},
+  {"keyword":"computer","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"máy tính"},{"lang":"fr","text":"ordinateur"}],"examples":["My computer crashed while I was working."]},
+  {"keyword":"letter","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"lá thư"},{"lang":"fr","text":"lettre"}],"examples":["She wrote a letter to her grandmother."]},
+  {"keyword":"model","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"mô hình"},{"lang":"fr","text":"modèle"}],"examples":["The scientist built a model of the solar system."]},
+  {"keyword":"table","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cái bàn"},{"lang":"fr","text":"table"}],"examples":["Put the plates on the table."]},
+  {"keyword":"chair","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cái ghế"},{"lang":"fr","text":"chaise"}],"examples":["He sat down in the chair."]},
+  {"keyword":"animal","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"động vật"},{"lang":"fr","text":"animal"}],"examples":["The zoo has many exotic animals."]},
+  {"keyword":"plant","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cây"},{"lang":"fr","text":"plante"}],"examples":["She waters the plant every morning."]},
+  {"keyword":"food","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"thức ăn"},{"lang":"fr","text":"nourriture"}],"examples":["The food at this restaurant is delicious."]},
+  {"keyword":"wall","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bức tường"},{"lang":"fr","text":"mur"}],"examples":["They painted the wall bright blue."]},
+  {"keyword":"chance","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cơ hội"},{"lang":"fr","text":"chance"}],"examples":["This is your chance to prove yourself."]},
+  {"keyword":"list","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"danh sách"},{"lang":"fr","text":"liste"}],"examples":["I made a list of things to buy."]},
+  {"keyword":"science","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"khoa học"},{"lang":"fr","text":"science"}],"examples":["He loves reading about science and technology."]},
+  {"keyword":"nature","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"thiên nhiên"},{"lang":"fr","text":"nature"}],"examples":["We enjoy hiking to admire nature."]},
+  {"keyword":"cost","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"chi phí"},{"lang":"fr","text":"coût"}],"examples":["The cost of living keeps rising."]},
+  {"keyword":"tax","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"thuế"},{"lang":"fr","text":"taxe"}],"examples":["They must pay tax on their income."]},
+  {"keyword":"land","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"đất đai"},{"lang":"fr","text":"terre"}],"examples":["The farmer owns a large piece of land."]},
+  {"keyword":"film","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bộ phim"},{"lang":"fr","text":"film"}],"examples":["We watched a new film last night."]},
+  {"keyword":"matter","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"vấn đề"},{"lang":"fr","text":"matière"}],"examples":["It doesn't matter what time we arrive."]},
+  {"keyword":"phone","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"điện thoại"},{"lang":"fr","text":"téléphone"}],"examples":["She left her phone at home."]},
+  {"keyword":"music","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"âm nhạc"},{"lang":"fr","text":"musique"}],"examples":["He listens to music while working."]},
+  {"keyword":"window","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cửa sổ"},{"lang":"fr","text":"fenêtre"}],"examples":["Open the window to let in fresh air."]},
+  {"keyword":"river","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"dòng sông"},{"lang":"fr","text":"rivière"}],"examples":["The river flows through the valley."]},
+  {"keyword":"mountain","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"núi"},{"lang":"fr","text":"montagne"}],"examples":["They hiked up the mountain at dawn."]},
+  {"keyword":"ocean","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"đại dương"},{"lang":"fr","text":"océan"}],"examples":["The ocean waves crashed on the shore."]},
+  {"keyword":"sky","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"bầu trời"},{"lang":"fr","text":"ciel"}],"examples":["The sky turned orange at sunset."]},
+  {"keyword":"sun","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"mặt trời"},{"lang":"fr","text":"soleil"}],"examples":["The sun rises in the east."]},
+  {"keyword":"moon","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"mặt trăng"},{"lang":"fr","text":"lune"}],"examples":["The moon was full and bright."]},
+  {"keyword":"star","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"ngôi sao"},{"lang":"fr","text":"étoile"}],"examples":["We could see thousands of stars in the desert."]},
+  {"keyword":"tree","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cây"},{"lang":"fr","text":"arbre"}],"examples":["A tall tree grows in front of the house."]},
+  {"keyword":"flower","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"hoa"},{"lang":"fr","text":"fleur"}],"examples":["She picked a flower from the garden."]},
+  {"keyword":"bird","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"chim"},{"lang":"fr","text":"oiseau"}],"examples":["A bird sang outside my window."]},
+  {"keyword":"dog","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"con chó"},{"lang":"fr","text":"chien"}],"examples":["My dog loves to play fetch."]},
+  {"keyword":"cat","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"con mèo"},{"lang":"fr","text":"chat"}],"examples":["The cat slept on the windowsill."]},
+  {"keyword":"fish","sourceLanguage":"en","partOfSpeech":"noun","translations":[{"lang":"vi","text":"cá"},{"lang":"fr","text":"poisson"}],"examples":["They caught fish in the lake."]},
+  {"keyword":"love","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"yêu"},{"lang":"fr","text":"aimer"}],"examples":["I love spending time with my family."]},
+  {"keyword":"hate","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"ghét"},{"lang":"fr","text":"détester"}],"examples":["He hates waiting in long lines."]},
+  {"keyword":"happy","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"hạnh phúc"},{"lang":"fr","text":"heureux"}],"examples":["She felt happy after the good news."]},
+  {"keyword":"sad","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"buồn"},{"lang":"fr","text":"triste"}],"examples":["He was sad when his friend moved away."]},
+  {"keyword":"angry","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"tức giận"},{"lang":"fr","text":"en colère"}],"examples":["She got angry when the bus was late."]},
+  {"keyword":"tired","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"mệt mỏi"},{"lang":"fr","text":"fatigué"}],"examples":["I feel tired after a long day at work."]},
+  {"keyword":"beautiful","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"đẹp"},{"lang":"fr","text":"beau"}],"examples":["The sunset over the ocean was beautiful."]},
+  {"keyword":"strong","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"mạnh mẽ"},{"lang":"fr","text":"fort"}],"examples":["He is strong enough to lift heavy boxes."]},
+  {"keyword":"weak","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"yếu"},{"lang":"fr","text":"faible"}],"examples":["She felt weak after the long illness."]},
+  {"keyword":"fast","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"nhanh"},{"lang":"fr","text":"rapide"}],"examples":["The new train is very fast."]},
+  {"keyword":"slow","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"chậm"},{"lang":"fr","text":"lent"}],"examples":["The traffic was slow this morning."]},
+  {"keyword":"easy","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"dễ"},{"lang":"fr","text":"facile"}],"examples":["This exercise is easy to understand."]},
+  {"keyword":"difficult","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"khó"},{"lang":"fr","text":"difficile"}],"examples":["The exam was more difficult than expected."]},
+  {"keyword":"cheap","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"rẻ"},{"lang":"fr","text":"bon marché"}],"examples":["We found a cheap hotel near the airport."]},
+  {"keyword":"expensive","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"đắt"},{"lang":"fr","text":"cher"}],"examples":["That jacket looks very expensive."]},
+  {"keyword":"hot","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"nóng"},{"lang":"fr","text":"chaud"}],"examples":["It's too hot to go outside today."]},
+  {"keyword":"cold","sourceLanguage":"en","partOfSpeech":"adjective","translations":[{"lang":"vi","text":"lạnh"},{"lang":"fr","text":"froid"}],"examples":["The water in the lake was freezing cold."]},
+  {"keyword":"begin","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"bắt đầu"},{"lang":"fr","text":"commencer"}],"examples":["The concert will begin at eight."]},
+  {"keyword":"finish","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"kết thúc"},{"lang":"fr","text":"finir"}],"examples":["I need to finish this report by Friday."]},
+  {"keyword":"buy","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"mua"},{"lang":"fr","text":"acheter"}],"examples":["She wants to buy a new laptop."]},
+  {"keyword":"sell","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"bán"},{"lang":"fr","text":"vendre"}],"examples":["They plan to sell their old car."]},
+  {"keyword":"read","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"đọc"},{"lang":"fr","text":"lire"}],"examples":["He likes to read before bed."]},
+  {"keyword":"write","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"viết"},{"lang":"fr","text":"écrire"}],"examples":["She wants to write a novel someday."]},
+  {"keyword":"speak","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"nói"},{"lang":"fr","text":"parler"}],"examples":["He can speak three languages fluently."]},
+  {"keyword":"listen","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"lắng nghe"},{"lang":"fr","text":"écouter"}],"examples":["Please listen carefully to the instructions."]},
+  {"keyword":"walk","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"đi bộ"},{"lang":"fr","text":"marcher"}],"examples":["We walk to school every morning."]},
+  {"keyword":"run","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"chạy"},{"lang":"fr","text":"courir"}],"examples":["He runs five kilometers every day."]},
+  {"keyword":"eat","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"ăn"},{"lang":"fr","text":"manger"}],"examples":["Let's eat dinner together tonight."]},
+  {"keyword":"drink","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"uống"},{"lang":"fr","text":"boire"}],"examples":["She likes to drink tea in the morning."]},
+  {"keyword":"sleep","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"ngủ"},{"lang":"fr","text":"dormir"}],"examples":["Children need to sleep at least eight hours."]},
+  {"keyword":"wake","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"thức dậy"},{"lang":"fr","text":"se réveiller"}],"examples":["I usually wake up at six."]},
+  {"keyword":"play","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"chơi"},{"lang":"fr","text":"jouer"}],"examples":["The kids love to play in the park."]},
+  {"keyword":"learn","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"học"},{"lang":"fr","text":"apprendre"}],"examples":["It's never too late to learn something new."]},
+  {"keyword":"teach","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"dạy"},{"lang":"fr","text":"enseigner"}],"examples":["She teaches math at the local school."]},
+  {"keyword":"travel","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"du lịch"},{"lang":"fr","text":"voyager"}],"examples":["They love to travel to new countries."]},
+  {"keyword":"arrive","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"đến nơi"},{"lang":"fr","text":"arriver"}],"examples":["The train will arrive in ten minutes."]},
+  {"keyword":"leave","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"rời đi"},{"lang":"fr","text":"partir"}],"examples":["We need to leave before it gets dark."]},
+  {"keyword":"stay","sourceLanguage":"en","partOfSpeech":"verb","translations":[{"lang":"vi","text":"ở lại"},{"lang":"fr","text":"rester"}],"examples":["They decided to stay home this weekend."]}
+]
