@@ -9,7 +9,7 @@ const randomWord = ref(null)
 
 async function fetchRandomWord() {
   try {
-    const { data } = await axios.get('http://localhost:3000/words/random')
+    const { data } = await axios.get('https://dictionary-website-qntj.onrender.com/words/random')
     randomWord.value = data
     showModal.value = true // only reveal the modal once we actually have a word
   } catch (error) {

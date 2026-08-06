@@ -127,7 +127,7 @@ export default {
       this.isLoading = true;
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:3000/api/user/favorites', {
+        const response = await axios.get('https://dictionary-website-qntj.onrender.com/api/user/favorites', {
           headers: { Authorization: `Bearer ${token}` }
         });
         this.favorites = response.data.data;

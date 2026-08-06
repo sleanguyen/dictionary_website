@@ -50,7 +50,7 @@ export default {
       this.loadError = null;
 
       try {
-        const response = await axios.get(`http://localhost:3000/words/${id}`);
+        const response = await axios.get(`https://dictionary-website-qntj.onrender.com/words/${id}`);
         const data = response.data;
 
         this.wordData = {
@@ -72,7 +72,7 @@ export default {
       this.isSubmitting = true;
 
       try {
-        await axios.put(`http://localhost:3000/words/${id}`, payload);
+        await axios.put(`https://dictionary-website-qntj.onrender.com/words/${id}`, payload);
         alert('Word updated successfully!');
         this.$router.push('/words');
       } catch (error) {

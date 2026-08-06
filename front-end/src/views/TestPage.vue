@@ -21,7 +21,7 @@ const serverMessage = ref('');
 
 const testConnection = async () => {
   try {
-    const response = await axios.get('http://localhost:3000/api/test');
+    const response = await axios.get('https://dictionary-website-qntj.onrender.com/api/test');
     serverMessage.value = response.data.message;
   } catch (error) {
     serverMessage.value = "Connection failed! The endpoint is not running or CORS is misconfigured.";

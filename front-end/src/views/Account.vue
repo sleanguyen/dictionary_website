@@ -92,7 +92,7 @@ export default {
       this.isSubmitting = true;
 
       try {
-        const response = await axios.put('http://localhost:3000/auth/profile', {
+        const response = await axios.put('https://dictionary-website-qntj.onrender.com/auth/profile', {
           newUsername: this.form.newUsername.trim() || undefined,
           newPassword: this.form.newPassword.trim() || undefined,
           currentPassword: this.form.currentPassword

@@ -46,7 +46,7 @@ export default {
       this.isSubmitting = true;
 
       try {
-        await axios.post('http://localhost:3000/words', payload);
+        await axios.post('https://dictionary-website-qntj.onrender.com/words', payload);
         alert('Word added successfully!');
         this.newWord = emptyWord();
         this.formKey++;

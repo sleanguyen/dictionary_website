@@ -49,7 +49,7 @@ async function toggleFavorite() {
     // configured, so a relative "/api/..." call would hit the Vite dev
     // server on :5173 instead of Express on :3000.
     const { data } = await axios.post(
-      `http://localhost:3000/api/user/favorites/${props.wordId}`,
+      `https://dictionary-website-qntj.onrender.com/api/user/favorites/${props.wordId}`,
       {}, // no body needed, the wordId is in the URL
       { headers: { Authorization: `Bearer ${token}` } }
     )
