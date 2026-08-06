@@ -16,9 +16,16 @@ const userSchema = new mongoose.Schema(
       type: String,
       enum: ['viewer', 'admin'],
       default: 'viewer'
-    }
+    },
+    favorites: [
+  {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Word'
+  }
+]
   },
   { timestamps: true }
+  
 );
 
 module.exports = mongoose.model('User', userSchema);

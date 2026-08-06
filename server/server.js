@@ -4,7 +4,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const wordRoutes = require('./api/routes/wordRoutes');
-const authRoutes = require('./routes/authRoutes')
+const authRoutes = require('./api/routes/authRoutes')
+const userRoutes = require('./api/routes/userRoutes')
 const app = express();
 const PORT = 3000;
 
@@ -22,6 +23,15 @@ app.use(bodyParser.json());
 
 app.use('/words', wordRoutes);
 app.use('/auth', authRoutes); 
+app.use('/api/user', userRoutes);
+
+// test route
+app.get('/api/test', (req, res) => {
+    res.json({ 
+        success: true, 
+        message: "successfully connected! Backend Express is running." 
+    });
+});
 
 // Start server
 app.listen(PORT, () => {

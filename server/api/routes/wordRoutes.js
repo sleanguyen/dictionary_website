@@ -1,10 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const wordController = require('../controllers/wordController');
-const { verifyToken, requireAdmin } = require('../../middleware/authMiddleware');
+const { verifyToken, requireAdmin, optionalAuth } = require('../../middleware/authMiddleware');
 
-// Public
-router.get('/', wordController.getAllWords);
+
+router.get('/', optionalAuth, wordController.getAllWords);
+
+
+router.get('/random', wordController.getRandomWord);
+
 router.get('/:id', wordController.getWordById);
 
 // Protected — admin only

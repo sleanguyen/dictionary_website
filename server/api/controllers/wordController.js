@@ -1,23 +1,16 @@
 const Word = require('../models/wordModel');
+const User = require('../models/userModel');
 
-// GET /words - list all words, with optional search
-exports.getAllWords = async (req, res) => {
+// GET /words/random - one random word, for the auto-popup on page load
+exports.getRandomWord = async (req, res) => {
   try {
-    const search = req.query.search;
-    let query = {};
+    const result = await Word.aggregate([{ $sample: { size: 1 } }]);
 
-    if (search) {
-      const regex = new RegExp(search, 'i');
-      query = {
-        $or: [
-          { keyword: regex },
-          { 'translations.text': regex }
-        ]
-      };
+    if (result.length === 0) {
+      return res.status(404).json({ message: 'No words found.' });
     }
 
-    const words = await Word.find(query).sort({ keyword: 1 });
-    res.status(200).json(words);
+    res.status(200).json(result[0]);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -77,20 +70,48 @@ exports.deleteWord = async (req, res) => {
   }
 };
 
-// GET /words?page=1&limit=10
+// GET /words?page=1&limit=10&pos=noun&sort=asc
 exports.getAllWords = async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 10;
     const skip = (page - 1) * limit;
 
+    const pos = req.query.pos;
+    const query = {};
+    if (pos) query.partOfSpeech = pos;
+
+    let sortOption = {};
+    if (req.query.sort === 'asc') {
+      sortOption = { keyword: 1 };
+    } else if (req.query.sort === 'desc') {
+      sortOption = { keyword: -1 };
+    }
+
     const [words, totalItems] = await Promise.all([
-      Word.find().skip(skip).limit(limit),
-      Word.countDocuments()
+      Word.find(query)
+        .collation({ locale: 'en', strength: 2 })
+        .sort(sortOption)
+        .skip(skip)
+        .limit(limit),
+      Word.countDocuments(query)
     ]);
 
+    let favoriteIds = new Set();
+    if (req.user) {
+      const user = await User.findById(req.user.id).select('favorites');
+      if (user) {
+        favoriteIds = new Set(user.favorites.map((id) => id.toString()));
+      }
+    }
+
+    const wordsWithFavoriteFlag = words.map((word) => ({
+      ...word.toObject(),
+      isFavorite: favoriteIds.has(word._id.toString())
+    }));
+
     res.status(200).json({
-      data: words,
+      data: wordsWithFavoriteFlag,
       totalItems,
       totalPages: Math.ceil(totalItems / limit),
       currentPage: page

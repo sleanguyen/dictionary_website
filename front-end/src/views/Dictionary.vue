@@ -26,6 +26,42 @@
     </section>
 
     <section class="table-card">
+      <div class="filter-bar">
+        <label for="pos-filter" class="filter-label">Filter by Part of Speech</label>
+        <select
+          id="pos-filter"
+          v-model="selectedPos"
+          class="pos-select"
+          @change="handleFilterChange"
+        >
+          <option value="">All</option>
+          <option value="noun">Noun</option>
+          <option value="verb">Verb</option>
+          <option value="adjective">Adjective</option>
+          <option value="interjection">Interjection</option>
+        </select>
+
+        <label class="filter-label">Sort</label>
+        <div class="sort-toggle">
+          <button
+            type="button"
+            class="sort-btn"
+            :class="{ 'sort-btn-active': sortOrder === 'asc' }"
+            @click="setSortOrder('asc')"
+          >
+            A–Z
+          </button>
+          <button
+            type="button"
+            class="sort-btn"
+            :class="{ 'sort-btn-active': sortOrder === 'desc' }"
+            @click="setSortOrder('desc')"
+          >
+            Z–A
+          </button>
+        </div>
+      </div>
+
       <table class="word-table">
         <thead>
           <tr>
@@ -39,7 +75,23 @@
         <tbody>
           <tr v-for="(word, index) in filteredWords" :key="word._id || index" class="table-row">
             <td class="col-english">
-              <div class="keyword">{{ word.keyword }}</div>
+              <div class="keyword-row">
+                <div class="keyword">{{ word.keyword }}</div>
+                <button
+                  class="speaker-btn"
+                  type="button"
+                  title="Pronounce"
+                  :disabled="!ttsSupported"
+                  @click="playAudio(word.keyword, 'en')"
+                >
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M15.54 8.46a5 5 0 010 7.07"></path>
+                    <path d="M18.36 5.64a9 9 0 010 12.73"></path>
+                  </svg>
+                </button>
+                <HeartButton :word-id="word._id" :initial-favorite="word.isFavorite" />
+              </div>
               <div class="phonetic">/{{ word.keyword }}/</div>
             </td>
             <td class="col-translations">
@@ -51,6 +103,19 @@
                 >
                   <span class="lang-badge">{{ t.lang }}</span>
                   <span class="translation-text">{{ t.text }}</span>
+                  <button
+                    class="speaker-btn speaker-btn-chip"
+                    type="button"
+                    title="Pronounce"
+                    :disabled="!ttsSupported"
+                    @click="playAudio(t.text, t.lang)"
+                  >
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                      <path d="M15.54 8.46a5 5 0 010 7.07"></path>
+                      <path d="M18.36 5.64a9 9 0 010 12.73"></path>
+                    </svg>
+                  </button>
                 </span>
                 <span v-if="!word.translations || word.translations.length === 0" class="no-translations">
                   No translations yet
@@ -111,18 +176,35 @@
 <script>
 import axios from 'axios';
 import { isAdmin } from '../utils/auth';
-
+import HeartButton from './HeartButton.vue'
 export default {
+  components: { HeartButton },
   name: 'Dictionary',
   data() {
     return {
       searchQuery: '',
+      selectedPos: '',
+      sortOrder: '',
       allWords: [],
       deletingId: null,
       currentPage: 1,
       totalPages: 1,
       totalItems: 0,
-      limit: 10
+      limit: 10,
+      ttsSupported: typeof window !== 'undefined' && 'speechSynthesis' in window,
+      langLocaleMap: {
+        en: 'en-US',
+        vi: 'vi-VN',
+        fr: 'fr-FR',
+        es: 'es-ES',
+        de: 'de-DE',
+        it: 'it-IT',
+        pt: 'pt-PT',
+        ru: 'ru-RU',
+        ja: 'ja-JP',
+        ko: 'ko-KR',
+        zh: 'zh-CN'
+      }
     };
   },
   computed: {
@@ -152,12 +234,53 @@ export default {
   mounted() {
     this.fetchWords();
   },
+  beforeUnmount() {
+    // Avoid leaving an utterance talking to itself after the user
+    // navigates away from this view.
+    if (this.ttsSupported) {
+      window.speechSynthesis.cancel();
+    }
+  },
   methods: {
+    /**
+     * Speaks `text` aloud using the browser's native Web Speech API,
+     * pronounced in the locale that corresponds to `langCode`.
+     * No external audio files or backend calls are involved.
+     */
+    playAudio(text, langCode) {
+      if (!this.ttsSupported || !text) return;
+
+      // Cancel anything currently queued/speaking so overlapping clicks
+      // don't stack utterances on top of each other.
+      window.speechSynthesis.cancel();
+
+      const locale = this.langLocaleMap[(langCode || '').toLowerCase()] || 'en-US';
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = locale;
+      utterance.rate = 0.95;
+      utterance.pitch = 1;
+
+      window.speechSynthesis.speak(utterance);
+    },
     async fetchWords() {
       try {
-        const response = await axios.get(
-          `http://localhost:3000/words?page=${this.currentPage}&limit=${this.limit}`
-        );
+        let url = `http://localhost:3000/words?page=${this.currentPage}&limit=${this.limit}`;
+        if (this.selectedPos) {
+          url += `&pos=${encodeURIComponent(this.selectedPos)}`;
+        }
+        if (this.sortOrder) {
+          url += `&sort=${this.sortOrder}`;
+        }
+
+        // Sending the token here is optional on the backend (optionalAuth) —
+        // guests still get the word list back either way. But when a token
+        // IS present, the backend uses it to mark isFavorite per word so
+        // the heart icons render correctly filled on page load.
+        const token = localStorage.getItem('token');
+        const headers = token ? { Authorization: `Bearer ${token}` } : {};
+
+        const response = await axios.get(url, { headers });
 
         this.allWords = response.data.data;
         this.totalItems = response.data.totalItems;
@@ -168,6 +291,19 @@ export default {
         this.allWords = [];
       }
     },
+
+    handleFilterChange() {
+      this.currentPage = 1;
+      this.fetchWords();
+    },
+
+    setSortOrder(order) {
+      // Clicking the already-active sort button turns sorting off again.
+      this.sortOrder = this.sortOrder === order ? '' : order;
+      this.currentPage = 1;
+      this.fetchWords();
+    },
+
     handleSearch() {
       // Search resets to page 1 conceptually, but since search is
       // client-side over the current page only, we just re-filter —
@@ -307,6 +443,87 @@ export default {
   overflow: hidden;
 }
 
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px 4px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.pos-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--bg-espresso);
+  color: var(--text-taupe);
+  border: 1px solid rgba(207, 167, 110, 0.35);
+  border-radius: 999px;
+  padding: 8px 36px 8px 16px;
+  font-size: 0.82rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23cfa76e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pos-select:hover {
+  border-color: var(--accent-gold);
+}
+
+.pos-select:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(207, 167, 110, 0.15);
+}
+
+.pos-select option {
+  background-color: var(--bg-espresso);
+  color: var(--text-taupe);
+}
+
+.sort-toggle {
+  display: flex;
+  gap: 6px;
+}
+
+.sort-btn {
+  background-color: var(--bg-espresso);
+  color: var(--text-muted);
+  border: 1px solid rgba(207, 167, 110, 0.35);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.sort-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.sort-btn-active {
+  background-color: var(--accent-gold);
+  color: var(--bg-espresso);
+  border-color: var(--accent-gold);
+}
+
+.sort-btn-active:hover {
+  background-color: #ddbb85;
+  color: var(--bg-espresso);
+}
+
 .word-table {
   width: 100%;
   border-collapse: collapse;
@@ -349,10 +566,51 @@ export default {
   min-width: 140px;
 }
 
+.keyword-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .keyword {
   font-weight: 700;
   color: var(--text-taupe);
   font-size: 1rem;
+}
+
+.speaker-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 3px;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.75;
+  transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, transform 0.1s ease;
+}
+
+.speaker-btn:hover:not(:disabled) {
+  color: var(--accent-gold);
+  opacity: 1;
+  background-color: rgba(207, 167, 110, 0.1);
+}
+
+.speaker-btn:active:not(:disabled) {
+  transform: scale(0.92);
+}
+
+.speaker-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.speaker-btn-chip {
+  color: var(--text-muted);
+  opacity: 0.6;
 }
 
 .phonetic {

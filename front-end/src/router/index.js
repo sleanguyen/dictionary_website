@@ -6,7 +6,9 @@ import About from '../views/About.vue';
 import Login from '../views/Login.vue';
 import Register from '../views/Register.vue';
 import Account from '../views/Account.vue';
+import Favourites from '../views/Favourites.vue';
 import { isAdmin, isLoggedIn } from '../utils/auth';
+import TestPage from '../views/TestPage.vue';
 
 const routes = [
   { path: '/', redirect: '/words' },
@@ -32,7 +34,18 @@ const routes = [
     component: Account,
     meta: { requiresAuth: true }
   },
-  { path: '/about', name: 'About', component: About }
+  {
+    path: '/favourites',
+    name: 'Favourites',
+    component: Favourites,
+    meta: { requiresAuth: true }
+  },
+  { path: '/about', name: 'About', component: About },
+  {
+  path: '/test',
+  name: 'TestPage',
+  component: TestPage
+}
 ];
 
 const router = createRouter({

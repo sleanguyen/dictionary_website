@@ -8,6 +8,7 @@
 
       <div class="navbar-center">
         <router-link to="/words" class="nav-link">Dictionary</router-link>
+        <router-link v-if="userIsLoggedIn" to="/favourites" class="nav-link">Favourites</router-link>
         <router-link v-if="userIsAdmin" to="/words/new" class="nav-link">Add Word</router-link>
         <router-link to="/about" class="nav-link">About</router-link>
       </div>
@@ -40,14 +41,18 @@
     <main class="app-content">
       <router-view />
     </main>
+
+    <RandomWordModal />
   </div>
 </template>
 
 <script>
 import { isAdmin, isLoggedIn, getUsername, clearSession } from './utils/auth';
+import RandomWordModal from './views/RandomWordModal.vue';
 
 export default {
   name: 'App',
+  components: { RandomWordModal },
   data() {
     return {
       menuOpen: false
