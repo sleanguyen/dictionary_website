@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -9,7 +10,7 @@ const userRoutes = require('./api/routes/userRoutes')
 const app = express();
 const PORT = 3000;
 
-const MONGO_URI = 'mongodb+srv://seojax2:xmEPcQmNPRFrRaKy@cluster0.tyr4v68.mongodb.net/polyglot_dictionary?appName=Cluster0';
+const MONGO_URI = process.env.MONGO_URI;
 
 // Connect to MongoDB
 mongoose.connect(MONGO_URI)
