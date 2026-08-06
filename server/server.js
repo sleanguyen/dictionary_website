@@ -22,8 +22,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/words', wordRoutes);
-app.use('/auth', authRoutes); 
+app.use('/api/words', wordRoutes);
+app.use('/api/auth', authRoutes); 
 app.use('/api/user', userRoutes);
 
 // test route
