@@ -8,7 +8,7 @@ const wordRoutes = require('./api/routes/wordRoutes');
 const authRoutes = require('./api/routes/authRoutes')
 const userRoutes = require('./api/routes/userRoutes')
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const MONGO_URI = process.env.MONGO_URI;
 
