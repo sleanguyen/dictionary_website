@@ -66,7 +66,7 @@ export default {
       this.isSubmitting = true;
 
       try {
-        const response = await axios.post('https://dictionary-website-qntj.onrender.com/auth/login', {
+        const response = await axios.post('https://dictionary-website-qntj.onrender.com/api/auth/login', {
           username: this.credentials.username,
           password: this.credentials.password
         });

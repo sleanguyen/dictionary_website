@@ -111,7 +111,7 @@ export default {
       this.isSubmitting = true;
 
       try {
-        await axios.post('https://dictionary-website-qntj.onrender.com/auth/register', {
+        await axios.post('https://dictionary-website-qntj.onrender.com/api/auth/register', {
           username,
           password
         });

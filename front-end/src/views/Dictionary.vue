@@ -265,7 +265,7 @@ export default {
     },
     async fetchWords() {
       try {
-        let url = `https://dictionary-website-qntj.onrender.com/words?page=${this.currentPage}&limit=${this.limit}`;
+        let url = `https://dictionary-website-qntj.onrender.com/api/words?page=${this.currentPage}&limit=${this.limit}`;
         if (this.selectedPos) {
           url += `&pos=${encodeURIComponent(this.selectedPos)}`;
         }
@@ -330,7 +330,7 @@ export default {
       this.deletingId = word._id;
 
       try {
-        await axios.delete(`https://dictionary-website-qntj.onrender.com/words/${word._id}`);
+        await axios.delete(`https://dictionary-website-qntj.onrender.com/api/words/${word._id}`);
         // Refetch the current page instead of filtering locally — deleting
         // an item shifts what "page 2" even means server-side, so a local
         // splice would leave totalItems/totalPages out of sync.
