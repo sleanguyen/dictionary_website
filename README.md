@@ -149,3 +149,45 @@ A pronunciation feature was implemented entirely client-side using the browser's
   <br/>
   <i>Figure 15 - "Speaker icon controls next to the English keyword and each translation chip, with the browser's native Web Speech API pronouncing the corresponding text in its mapped locale (e.g. vi-VN for Vietnamese)."</i>
 </div>
+
+### Search Functionality
+
+A live search bar was added above the word list, bound to a reactive query string via `v-model`. As the user types, the input is used to filter the `keyword` field against the fetched dataset, allowing users to quickly locate a specific entry without scrolling through paginated results. The search works in tandem with the existing pagination and filtering logic, so the entry count and page totals stay in sync with whatever subset of words is currently visible.
+
+<div align="center">
+  <img width="1137" height="782" alt="Screenshot 2026-08-07 113459" src="https://github.com/user-attachments/assets/f752666d-52b6-41a2-8ffd-3cd70511120f" />
+
+  <br/>
+  <i>Figure 16 - "Search bar in the dictionary view, allowing users to filter the word list by keyword, with entry count and pagination remaining consistent with the active search term."</i>
+</div>
+
+### Sorting (A–Z / Z–A)
+
+Two toggle buttons were added next to the Part of Speech filter, allowing the word list to be sorted alphabetically in ascending or descending order. The active sort direction is tracked in reactive state and highlighted visually (filled background) so the user always knows which order is currently applied. Sorting is applied client-side on the already-paginated result set returned by the backend, keeping the implementation lightweight without requiring additional query parameters on the `/words` endpoint.
+
+<div align="center">
+  <img width="927" height="527" alt="Screenshot 2026-08-07 113530" src="https://github.com/user-attachments/assets/8ed8dbce-9d26-48fa-b786-0d398c9f073e" />
+
+  <br/>
+  <i>Figure 17 - "Sort controls showing the 'A–Z' option actively selected, with the word list re-ordered alphabetically as a result."</i>
+</div>
+
+### Favourites Feature
+
+A heart-icon toggle was added next to each word's pronunciation button, allowing authenticated users to bookmark entries they want to revisit. Clicking the icon marks the word's `isFavorite` field (or an equivalent client/local mapping) as `true` and immediately reflects the change with a filled red heart. A dedicated 'Favourites' page was added to the navigation bar and Vue Router, rendering only the subset of words the user has marked, using the same table layout as the main Dictionary view for visual consistency.
+
+<div align="center">
+  <img width="910" height="219" alt="Screenshot 2026-08-07 113603" src="https://github.com/user-attachments/assets/5d7daaec-d8f8-4305-aaa9-e0724c86d1cd" />
+
+  <br/>
+  <i>Figure 18 - "A word marked as a favourite via the heart icon, shown with the icon in its active (filled) state."</i>
+</div>
+
+<br/>
+
+<div align="center">
+  <img width="1031" height="403" alt="Screenshot 2026-08-07 113615" src="https://github.com/user-attachments/assets/f2f6a4ac-c2ed-46bc-9a8d-15e3f4f4b397" />
+
+  <br/>
+  <i>Figure 19 - "Dedicated Favourites page listing only the words the user has bookmarked, accessible via a new navigation link and route."</i>
+</div>
