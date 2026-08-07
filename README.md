@@ -193,7 +193,7 @@ A heart-icon toggle was added next to each word's pronunciation button, allowing
 </div>
 
 ## Deployment
-
+https://dictionary-ui.onrender.com 
 ### Cloud Hosting on Render
 
 The backend Express API was deployed as a standalone Web Service on Render, configured to build and run exclusively from the `server/` subdirectory of the monorepo via Render's Root Directory setting. This isolates the backend's build process (`npm install`) and start command (`node server.js`) from the Vue frontend, allowing each part of the stack to be deployed and scaled independently. Environment variables, including the MongoDB Atlas connection string (`MONGO_URI`), were configured directly in the Render dashboard rather than committed to the repository, keeping credentials out of version control while still being injected into `process.env` at runtime. The Vue 3 frontend was deployed separately as a Render Static Site, built via `vite build` and served from the resulting `dist/` output.
