@@ -191,3 +191,36 @@ A heart-icon toggle was added next to each word's pronunciation button, allowing
   <br/>
   <i>Figure 19 - "Dedicated Favourites page listing only the words the user has bookmarked, accessible via a new navigation link and route."</i>
 </div>
+
+## Deployment
+
+### Cloud Hosting on Render
+
+The backend Express API was deployed as a standalone Web Service on Render, configured to build and run exclusively from the `server/` subdirectory of the monorepo via Render's Root Directory setting. This isolates the backend's build process (`npm install`) and start command (`node server.js`) from the Vue frontend, allowing each part of the stack to be deployed and scaled independently. Environment variables, including the MongoDB Atlas connection string (`MONGO_URI`), were configured directly in the Render dashboard rather than committed to the repository, keeping credentials out of version control while still being injected into `process.env` at runtime. The Vue 3 frontend was deployed separately as a Render Static Site, built via `vite build` and served from the resulting `dist/` output.
+
+<div align="center">
+  <img width="1080" height="316" alt="Screenshot 2026-08-07 114436" src="https://github.com/user-attachments/assets/a1dce4ce-8b03-4ada-9b81-9191c464bfb7" />
+
+  <br/>
+  <i>Figure 20 - "Render deploy logs for the backend Web Service, showing a successful build, the server binding to the assigned port, and a confirmed connection to the MongoDB Atlas cluster."</i>
+</div>
+
+<br/>
+
+<div align="center">
+<img width="594" height="134" alt="Screenshot 2026-08-07 114541" src="https://github.com/user-attachments/assets/1335404b-e043-4f02-9854-2d47c5b578c2" />
+
+  <br/>
+  <i>Figure 21 - "Deployed API endpoint returning live data from MongoDB Atlas, confirming the hosted backend and database layer are correctly connected in production."</i>
+</div>
+
+### Uptime Monitoring & Cold-Start Mitigation
+
+Render's free-tier Web Services spin down automatically after 15 minutes of inactivity, introducing a cold-start delay of 30–50 seconds on the next incoming request. To mitigate this for demonstration and marking purposes, an external HTTP monitor was configured on UptimeRobot to ping a lightweight backend health-check route (`/api/test`) at 5-minute intervals — an interval shorter than Render's inactivity threshold, keeping the service continuously warm. This also provides basic uptime observability: UptimeRobot logs response status per check and sends an email alert if the service becomes genuinely unreachable, distinguishing real downtime from expected cold-start behaviour.
+
+<div align="center">
+<img width="1295" height="781" alt="Screenshot 2026-08-07 114657" src="https://github.com/user-attachments/assets/72565e9e-b208-44a0-9d58-c13eeed95d41" />
+
+  <br/>
+  <i>Figure 22 - "UptimeRobot dashboard showing the configured HTTP(s) monitor pinging the backend health-check route every 5 minutes, keeping the Render free-tier instance from spinning down."</i>
+</div>
